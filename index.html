@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Program</title>
+</head>
+<body>
+    <h1>C Exercises</h1>
+    <section>
+        <h3>Problem Statement:</h3>
+        <p>Write a program in any language to find the sum of the series 1 + 11 + 111 + 1111 + ... n terms.</p>
+    </section>
+    <hr>
+    <section>
+        <h4>Code:</h4>
+        <code>
+            #include &lt;stdio.h&gt; <br> 
+                void main() <br>
+                { <br>
+                    &nbsp; &nbsp; int number=0,i=0; <br>
+                    &nbsp; &nbsp; long sum=0; <br>
+                    &nbsp; &nbsp; long int t=1; <br>
+                    &nbsp; &nbsp; printf("Input the number of terms : "); // <small>enter total number of terms in problem</small> <br>   
+                    &nbsp; &nbsp; scanf("%d",&num); <br>
+                    &nbsp; &nbsp; for(i=1;i&lt;=n;i++) <br>
+                    &nbsp; &nbsp; {<br>
+                        &nbsp; &nbsp;&nbsp; &nbsp; printf("%ld",t); <br>
+                        &nbsp; &nbsp;&nbsp; &nbsp; if (i&lt;n) <br>
+                        &nbsp; &nbsp;&nbsp; &nbsp; {  <br>
+                            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; printf("+"); <br>
+                        &nbsp; &nbsp;&nbsp; &nbsp; } <br>
+                        &nbsp; &nbsp;&nbsp; &nbsp; sum=sum+t; <br>
+                        &nbsp; &nbsp;&nbsp; &nbsp; t=(t*10)+1; <br>
+                    &nbsp; &nbsp; } <br>
+                    &nbsp; &nbsp; printf("\nThe Sum is : %ld\n",sum); <br>
+                }
+        </code>
+    </section>
+    <hr>
+    <section>
+        <h4>Sample Input:</h4>
+        <p><samp>Input the number of terms : 5 <br> </samp></p>    
+    </section>
+    <hr>
+    <p>Press <kbd>Enter</kbd></p>
+    <hr>
+    <section>
+        <h4>Sample Output:</h4>
+        <p><samp>1 + 11 + 111 + 1111 + 11111 <br> The Sum is : 12345 </samp></p>
+    </section>
+    <hr>
+    <section>
+        <h4>Variables Used:</h4>
+        <p>
+            <ul>
+                <li><p>int <br> <var>num</var> To count number of terms <br> <var>i</var> Used for <s>itration</s> iteration <br> </p></li>
+                <li><p>long <br> <var>sum</var> To calculate final sum</p></li>
+            </ul>
+        </p>    
+    </section>
+    <hr>
+    <section>
+        <h4>Complexity:</h4>
+        <p>Time Complexity: O(n) where 'n' is number of terms.</p>    
+    </section>
+    <hr>
+    <section>
+        <h4>Algorithm:</h4>
+        <p>For algorithm and flowchart for this solution <a href="https://www.w3resource.com/c-programming-exercises/for-loop/c-for-loop-exercises-26.php">Click here</a></p>
+    </section>
+</body>
+</html>
